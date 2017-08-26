@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?><RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+     
+     <SurfaceView
+         android:id="@+id/TransparentView"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:layout_alignParentLeft="true"
+         android:layout_centerVertical="true"/>
+     
+     <FrameLayout
+    	 android:id="@+id/camera_preview"
+    	 android:layout_width="fill_parent"
+    	 android:layout_height="fill_parent"
+    	 android:layout_weight="1">
+
+     </FrameLayout>
+
+     <ImageView
+         android:id="@+id/ivPreview"
+         android:layout_width="110dp"
+         android:layout_height="110dp"
+         android:layout_alignParentLeft="true"
+         android:layout_above="@+id/bSearch"
+         android:layout_marginBottom="20dp"
+         android:layout_marginLeft="10dp"
+         android:src="@drawable/transparent" />
+       
+     <Button
+         android:id="@+id/bSearch"
+         android:layout_width="60dp"
+         android:layout_height="60dp"
+         android:layout_alignParentBottom="true"
+         android:layout_centerHorizontal="true"
+         android:layout_marginBottom="28dp"
+         android:background="@drawable/search_icon" />
+
+     <Button
+         android:id="@+id/bObjectSearch"
+         android:layout_width="50dp"
+         android:layout_height="50dp"
+         android:layout_alignParentTop="true"
+         android:layout_alignParentRight="true"
+         android:layout_marginBottom="8dp"
+         android:layout_marginRight="5dp"
+         android:background="@drawable/item_icon" />
+
+     <Button
+         android:id="@+id/bLandmarkSearch"
+         android:layout_width="60dp"
+         android:layout_height="60dp"
+         android:layout_below="@+id/bObjectSearch"
+         android:layout_alignParentRight="true"
+         android:layout_marginBottom="8dp"
+         android:background="@drawable/landmark_icon" />
+
+     <Button
+         android:id="@+id/bLogoSearch"
+         android:layout_width="50dp"
+         android:layout_height="50dp"
+         android:layout_below="@+id/bLandmarkSearch"
+         android:layout_alignParentRight="true"
+         android:layout_marginRight="5dp"
+         android:layout_marginBottom="8dp"
+         android:background="@drawable/trademark_icon" />
+
+     <Button
+        android:id="@+id/bOCRSearch"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/bLogoSearch"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/text_icon"/>
+
+     <Button
+        android:id="@+id/bMute"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/sound_icon_on" />
+
+     <Button
+        android:id="@+id/bUpload"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+         android:layout_below="@+id/bMute"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/upload_icon" />
+
+    <Button
+        android:id="@+id/bVoiceRecord"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/voice_icon" />
+
+    <TextView
+         android:id="@+id/tvBottom"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_above="@+id/bSearch"
+         android:layout_alignParentRight="true"
+         android:layout_marginBottom="20dp"
+         android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/tvSearchType"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textSize="15dp"
+        android:gravity="center"
+        android:background="@drawable/border_style"/>
+
+    <TextView
+        android:id="@+id/tvImageDetails"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_toRightOf="@+id/ivPreview"
+        android:layout_above="@+id/bSearch"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="85dp"
+        android:textSize="12dp"
+        android:background="@drawable/border_style"/>
+
+    <TextView
+        android:id="@+id/tvDetails"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_toRightOf="@+id/ivPreview"
+        android:layout_above="@+id/bSearch"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="12dp"
+        android:background="@drawable/border_style"/>
+
+    <TextView
+        android:id="@+id/tvLoading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:textSize="15dp" />
+</RelativeLayout>

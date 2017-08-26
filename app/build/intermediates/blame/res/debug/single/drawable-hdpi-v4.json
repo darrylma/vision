@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "J:\\Documents\\AndroidApps\\Vision1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\border_style.xml",
+        "source": "J:\\Documents\\AndroidApps\\Vision1\\app\\src\\main\\res\\drawable-hdpi\\border_style.xml"
+    },
+    {
+        "merged": "J:\\Documents\\AndroidApps\\Vision1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\camera_icon.jpg",
+        "source": "J:\\Documents\\AndroidApps\\Vision1\\app\\src\\main\\res\\drawable-hdpi\\camera_icon.jpg"
+    }
+]

@@ -1,0 +1,15 @@
+1. Create Google account
+2. Go to https://cloud.google.com/vision/
+3. Click "VIEW MY CONSOLE"
+4. Create new Project
+5. Click "ENABLE"
+6. Create Billing Account
+7. Click on "Credentials"
+8. Create API key
+9. Copy paste API key to application
+10. Click "Dashboard"
+11. Click "+ ENABLE API"
+12. Search for Google Cloud Vision API
+13. Click "ENABLE"
+
+breeds2016@gmail.com

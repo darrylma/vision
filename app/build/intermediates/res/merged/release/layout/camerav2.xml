@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <SurfaceView
+        android:id="@+id/TransparentView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"/>
+
+    <FrameLayout
+        android:id="@+id/camera_preview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1">
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/bMute"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/sound_icon_on" />
+
+    <Button
+        android:id="@+id/bTextSearch"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/bMute"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/text_icon"/>
+
+    <Button
+        android:id="@+id/bVoiceRecord"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/voice_icon" />
+
+    <Button
+        android:id="@+id/bWiki"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_toRightOf="@+id/tvLandmarkDetails"
+        android:layout_alignTop="@+id/tvLandmarkDetails"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/wikipedia_globe_icon" />
+
+    <Button
+        android:id="@+id/bPlaySound"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_toRightOf="@+id/tvTranslationResult"
+        android:layout_marginLeft="2dp"
+        android:layout_alignTop="@+id/tvTranslationResult"
+        android:background="@drawable/play_icon"/>
+
+        <TextView
+        android:id="@+id/tvSearchType"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textSize="15dp"
+        android:gravity="center"
+        android:background="@drawable/border_style"/>
+
+    <TextView
+        android:id="@+id/tvObjects"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvSearchType"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="30dp"
+        android:text="Objects Found:"
+        android:textStyle="bold"
+        android:shadowColor="#7000"
+        android:shadowDx="12"
+        android:shadowDy="12"
+        android:shadowRadius="5"
+        android:textSize="14dp"/>
+
+    <TextView
+        android:id="@+id/tvObjectDetails"
+        android:scrollbars="vertical"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/tvObjects"
+        android:layout_alignParentRight="true"
+        android:textSize="12dp"
+        android:gravity="right"
+        android:background="@drawable/border_style"
+        android:layout_alignLeft="@+id/ivPreview"
+        android:layout_alignStart="@+id/ivPreview" />
+
+    <TextView
+        android:id="@+id/tvTexts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvObjectDetails"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:text="Texts Found:"
+        android:textStyle="bold"
+        android:shadowColor="#7000"
+        android:shadowDx="12"
+        android:shadowDy="12"
+        android:shadowRadius="5"
+        android:textSize="14dp"/>
+
+    <TextView
+        android:id="@+id/tvTextDetails"
+        android:scrollbars="vertical"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/tvTexts"
+        android:layout_alignParentRight="true"
+        android:textSize="12dp"
+        android:gravity="right"
+        android:background="@drawable/border_style"
+        android:layout_alignLeft="@+id/bSearch"
+        android:layout_alignStart="@+id/bSearch" />
+
+    <TextView
+        android:id="@+id/tvLandmarks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTextDetails"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:text="Landmarks Found:"
+        android:textStyle="bold"
+        android:shadowColor="#7000"
+        android:shadowDx="12"
+        android:shadowDy="12"
+        android:shadowRadius="5"
+        android:textSize="14dp"/>
+
+    <TextView
+        android:id="@+id/tvLandmarkDetails"
+        android:scrollbars="vertical"
+        android:layout_width="180dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/tvLandmarks"
+        android:textSize="12dp"
+        android:gravity="right"
+        android:background="@drawable/border_style"
+        android:layout_alignLeft="@+id/tvTextDetails"
+        android:layout_alignStart="@+id/tvTextDetails" />
+
+    <TextView
+        android:id="@+id/tvLogos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvLandmarkDetails"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:text="Logos Found:"
+        android:textStyle="bold"
+        android:shadowColor="#7000"
+        android:shadowDx="12"
+        android:shadowDy="12"
+        android:shadowRadius="5"
+        android:textSize="14dp"/>
+
+    <TextView
+        android:id="@+id/tvLogoDetails"
+        android:scrollbars="vertical"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/tvLogos"
+        android:layout_alignParentRight="true"
+        android:textSize="12dp"
+        android:gravity="right"
+        android:background="@drawable/border_style"
+        android:layout_alignLeft="@+id/bSearch"
+        android:layout_alignStart="@+id/bSearch" />
+
+    <EditText
+        android:id="@+id/etTextSearch"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_above="@+id/tvTranslationResult"
+        android:textSize="12dp"
+        android:background="@drawable/border_style"
+        android:layout_toLeftOf="@+id/bWiki"
+        android:layout_toRightOf="@+id/sLanguageSourceText"
+        android:layout_toEndOf="@+id/sLanguageSourceText" />
+
+    <TextView
+        android:id="@+id/tvTranslationResult"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_above="@+id/bSearch"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="12dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/border_style"
+        android:layout_alignLeft="@+id/etTextSearch"
+        android:layout_alignStart="@+id/etTextSearch"
+        android:layout_toLeftOf="@+id/bWiki"
+        android:layout_toStartOf="@+id/bWiki" />
+
+    <TextView
+        android:id="@+id/tvLoading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:textSize="15dp" />
+
+    <Spinner
+        android:id="@+id/sLanguageSourceText"
+        android:scrollbars="vertical"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:textSize="10dp"
+        android:gravity="center"
+        android:background="@drawable/border_style"
+        android:layout_alignTop="@+id/etTextSearch"
+        android:layout_alignLeft="@+id/sLanguageDestination"
+        android:layout_alignStart="@+id/sLanguageDestination"
+        android:layout_toLeftOf="@+id/bSearch"
+        android:layout_toStartOf="@+id/bSearch" />
+
+    <Spinner
+        android:id="@+id/sLanguageSourceVoice"
+        android:scrollbars="vertical"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:textSize="10dp"
+        android:gravity="center"
+        android:background="@drawable/border_style"
+        android:layout_alignTop="@+id/etTextSearch"
+        android:layout_alignLeft="@+id/sLanguageDestination"
+        android:layout_alignStart="@+id/sLanguageDestination"
+        android:layout_toLeftOf="@+id/bSearch"
+        android:layout_toStartOf="@+id/bSearch" />
+
+    <Spinner
+        android:id="@+id/sLanguageDestination"
+        android:scrollbars="vertical"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:textSize="10dp"
+        android:background="@drawable/border_style"
+        android:layout_alignTop="@+id/tvTranslationResult"
+        android:gravity="center"
+        android:layout_toRightOf="@+id/bTextSearch"
+        android:layout_toLeftOf="@+id/bSearch"
+        android:layout_toStartOf="@+id/bSearch" />
+
+    <ImageView
+        android:id="@+id/ivPreview"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/border_style"
+        android:layout_alignBottom="@+id/bSearch"
+        android:layout_alignLeft="@+id/tvLandmarks"
+        android:layout_alignStart="@+id/tvLandmarks" />
+
+    <Button
+        android:id="@+id/bSearch"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/search_icon"
+        android:layout_alignBottom="@+id/bUpload"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/bUpload"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/upload_icon"
+        android:layout_above="@+id/tvLoading"
+        android:layout_toLeftOf="@+id/sLanguageDestination"
+        android:layout_toStartOf="@+id/sLanguageDestination" />
+
+</RelativeLayout>

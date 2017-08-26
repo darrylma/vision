@@ -1,0 +1,38 @@
+[
+    {
+        "merged": "J:\\Documents\\AndroidApps\\Vision1\\app\\build\\intermediates\\res\\merged\\release\\color\\abc_background_cache_hint_selector_material_dark.xml",
+        "source": "C:\\Users\\Darryl\\.android\\build-cache\\b98babc6f1efbebc1d5a5470c5c06e79b89245f2\\output\\res\\color\\abc_background_cache_hint_selector_material_dark.xml"
+    },
+    {
+        "merged": "J:\\Documents\\AndroidApps\\Vision1\\app\\build\\intermediates\\res\\merged\\release\\color\\abc_primary_text_disable_only_material_light.xml",
+        "source": "C:\\Users\\Darryl\\.android\\build-cache\\b98babc6f1efbebc1d5a5470c5c06e79b89245f2\\output\\res\\color\\abc_primary_text_disable_only_material_light.xml"
+    },
+    {
+        "merged": "J:\\Documents\\AndroidApps\\Vision1\\app\\build\\intermediates\\res\\merged\\release\\color\\abc_search_url_text.xml",
+        "source": "C:\\Users\\Darryl\\.android\\build-cache\\b98babc6f1efbebc1d5a5470c5c06e79b89245f2\\output\\res\\color\\abc_search_url_text.xml"
+    },
+    {
+        "merged": "J:\\Documents\\AndroidApps\\Vision1\\app\\build\\intermediates\\res\\merged\\release\\color\\abc_background_cache_hint_selector_material_light.xml",
+        "source": "C:\\Users\\Darryl\\.android\\build-cache\\b98babc6f1efbebc1d5a5470c5c06e79b89245f2\\output\\res\\color\\abc_background_cache_hint_selector_material_light.xml"
+    },
+    {
+        "merged": "J:\\Documents\\AndroidApps\\Vision1\\app\\build\\intermediates\\res\\merged\\release\\color\\abc_primary_text_disable_only_material_dark.xml",
+        "source": "C:\\Users\\Darryl\\.android\\build-cache\\b98babc6f1efbebc1d5a5470c5c06e79b89245f2\\output\\res\\color\\abc_primary_text_disable_only_material_dark.xml"
+    },
+    {
+        "merged": "J:\\Documents\\AndroidApps\\Vision1\\app\\build\\intermediates\\res\\merged\\release\\color\\abc_secondary_text_material_dark.xml",
+        "source": "C:\\Users\\Darryl\\.android\\build-cache\\b98babc6f1efbebc1d5a5470c5c06e79b89245f2\\output\\res\\color\\abc_secondary_text_material_dark.xml"
+    },
+    {
+        "merged": "J:\\Documents\\AndroidApps\\Vision1\\app\\build\\intermediates\\res\\merged\\release\\color\\abc_secondary_text_material_light.xml",
+        "source": "C:\\Users\\Darryl\\.android\\build-cache\\b98babc6f1efbebc1d5a5470c5c06e79b89245f2\\output\\res\\color\\abc_secondary_text_material_light.xml"
+    },
+    {
+        "merged": "J:\\Documents\\AndroidApps\\Vision1\\app\\build\\intermediates\\res\\merged\\release\\color\\abc_primary_text_material_light.xml",
+        "source": "C:\\Users\\Darryl\\.android\\build-cache\\b98babc6f1efbebc1d5a5470c5c06e79b89245f2\\output\\res\\color\\abc_primary_text_material_light.xml"
+    },
+    {
+        "merged": "J:\\Documents\\AndroidApps\\Vision1\\app\\build\\intermediates\\res\\merged\\release\\color\\abc_primary_text_material_dark.xml",
+        "source": "C:\\Users\\Darryl\\.android\\build-cache\\b98babc6f1efbebc1d5a5470c5c06e79b89245f2\\output\\res\\color\\abc_primary_text_material_dark.xml"
+    }
+]
